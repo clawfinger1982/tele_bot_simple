@@ -45,11 +45,6 @@ async def on_startup(_):
 
 # + Реализовать возможность боту отправлять вам стикеры, эмодзи и рандомное местоположение.
 
-# @dp.message_handler(Text(equals=["rand_photo", "photo"]))
-# async def open_kb_photo(messasge: types.Message):
-#     await message.answer(#text='random photo',
-#                          #caption=photos[rand_photo],
-#                          reply_markup=ReplyKeyboardRemove())
 
 @dp.message_handler(commands=['help'])
 async def start_command(message: types.Message):
